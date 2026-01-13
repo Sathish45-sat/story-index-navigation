@@ -63,11 +63,7 @@ The goal is not to clone an existing app, but to **explore and prototype a bette
 A short demo video showing the full interaction flow is available here:
 
 👉 **Demo Video:**  
-
-<video src="[https://github.com/Sathish45-sat/story-index-navigation/releases/download/v1.0/story-index-demo-vid.mp4"
-       controls](https://github.com/Sathish45-sat/story-index-navigation/releases/download/v1.0/story-index-demo-vid.mp4)
-       width="320">
-</video>
+Link to watch: https://youtube.com/shorts/03O9Wuq60qg?feature=share
 Link for download: https://github.com/Sathish45-sat/story-index-navigation/releases/download/v1.0/story-index-demo-vid.mp4
 
 
