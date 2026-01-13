@@ -1,50 +1,99 @@
-# Welcome to your Expo app 👋
+# Story Index Navigation
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A UX-focused React Native prototype that improves navigation in story-based mobile apps by allowing users to jump directly to any story.
 
-## Get started
+---
 
-1. Install dependencies
+## 📌 Problem
 
-   ```bash
-   npm install
-   ```
+In story-heavy apps, users often have to tap repeatedly to reach a specific story they want to view.  
+This becomes frustrating when many stories are posted in sequence.
 
-2. Start the app
+---
 
-   ```bash
-   npx expo start
-   ```
+## 💡 Solution
 
-In the output, you'll find options to open the app in a
+This project introduces a **story index** presented as a **bottom sheet**, enabling users to jump directly to **any story** without breaking familiar story interactions.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+The goal is not to clone an existing app, but to **explore and prototype a better navigation pattern** for story-based interfaces.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+---
 
-## Get a fresh project
+## ✨ Key Features
 
-When you're ready, run:
+- Story index displayed using a bottom sheet
+- Jump directly to any story
+- Familiar story gestures:
+  - Tap left / right to navigate
+  - Long-press anywhere to pause
+- Animated progress bar for stories
+- Support for both image and video stories
+- Bottom UI isolated from gesture conflicts
+- Safe-area aware layout
+
+---
+
+## 🧠 Key UX Decisions
+
+- **Bottom sheet instead of modal**  
+  Keeps the story visible and feels less disruptive.
+
+- **Single gesture surface**  
+  Avoids conflicts between tap and long-press interactions.
+
+- **Coordinate-based tap detection**  
+  Ensures reliable left/right navigation without nested gesture issues.
+
+---
+
+## 🛠 Tech Stack
+
+- React Native
+- Expo
+- TypeScript
+- Expo AV (video support)
+- @gorhom/bottom-sheet
+- react-native-gesture-handler
+- react-native-reanimated
+
+---
+
+## 🎥 Demo
+
+A short demo video showing the full interaction flow is available here:
+
+👉 **Demo Video:**  
+<ADD YOUR DEMO VIDEO LINK HERE>
+
+---
+
+## 🚀 Running the Project Locally
 
 ```bash
-npm run reset-project
-```
+npm install
+npx expo start
+````
+📚 Learning Focus
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+This project was built as a learning-focused prototype to explore:
 
-## Learn more
+Gesture handling in React Native
 
-To learn more about developing your project with Expo, look at the following resources:
+Bottom sheet vs modal UX trade-offs
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+Handling image and video-based stories
 
-## Join the community
+Designing focused solutions without unnecessary features
 
-Join our community of developers creating universal apps.
+📄 Project Status
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Prototype / reference implementation
+
+Open to feedback and discussion
+
+Not intended as a production-ready library
+
+🤝 Feedback
+
+Suggestions, discussions, and UX feedback are welcome.
+The goal of this project is learning and exploration.
